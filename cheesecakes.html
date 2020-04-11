@@ -9,13 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" type="text/css" href="./styles.css">
-
-<style>
-        th,
-        td {
-            padding: 5px;
-        }
-    </style>
 </head>
 
 <body>
@@ -46,44 +39,32 @@
 
         </aside>
         <main id="main">
-            <table border="1"
-                style="width:100%;border: 1px solid black;border-collapse: collapse; padding: 20px;border-spacing: 5px;">
-                <caption>
-                    Our delicious selection of pies for you to enjoy!
-                </caption>
-                <thead>
-                    <tr>
-                        <th>Image</th>
-                        <th>Pie name</th>
-                        <th>Description</th>
-                        <th>Price</th>
-                        <th>Details</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><img src="images/products/cheesecakesmall.jpg" width="100"></td>
-                        <td>Cheese cake</td>
-                        <td>Plain cheese cake. Plain pleasure.</td>
-                        <td>$12.95</td>
-                        <td>View details</td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/products/blueberrycheesecakesmall.jpg" width="100"></td>
-                        <td>Blueberry cheese cake</td>
-                        <td>You'll love it!</td>
-                        <td>$17.95</td>
-                        <td>View details</td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/products/strawberrycheesecakesmall.jpg" width="100"></td>
-                        <td>Strawberry Cheese Cake</td>
-                        <td>One of the best cheese cakes you'll ever find!</td>
-                        <td>$18.95</td>
-                        <td>View details</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="cards">
+                <div class="card">
+                    <div class="content">
+                        <img src="images/products/cheesecakesmall.jpg">
+                        <h1 class="title">Cheese cake</h1>
+                        <div class="description">Plain cheese cake. Plain pleasure.</div>
+                    </div>
+                    <div class="footer">$12.95</div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <img src="images/products/blueberrycheesecakesmall.jpg">
+                        <h1 class="title">Blueberry cheese cake</h1>
+                        <div class="description">You'll love it!</div>
+                    </div>
+                    <div class="footer">$17.95</div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <img src="images/products/strawberrycheesecakesmall.jpg">
+                        <h1 class="title">Strawberry cheese cake</h1>
+                        <div class="description">One of the best cheese cakes you'll ever find!</div>
+                    </div>
+                    <div class="footer">$18.95</div>
+                </div>
+            </div>
         </main>
 
         <footer>

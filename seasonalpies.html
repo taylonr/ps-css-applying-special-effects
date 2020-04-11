@@ -1,91 +1,67 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="utf-8">
-    <title>Welcome to Bethany's Pie Shop!</title>
-    <meta name="author" content="Bethany's Pie Shop">
-    <meta name="description" content="Store front for Bethany's Pie Shop">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <head>
+        <meta charset="utf-8">
+        <title>Welcome to Bethany's Pie Shop!</title>
+        <meta name="author" content="Bethany's Pie Shop">
+        <meta name="description" content="Store front for Bethany's Pie Shop">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="favicon.png">
+        <link rel="stylesheet" type="text/css" href="./styles.css">
+    </head>
 
-    <style>
-        th,
-        td {
-            padding: 5px;
-        }
-    </style>
-</head>
-
-<body>
-    <header id="mainheader">
-        <nav>
-            <ul>
-                <li><img src="images/cake.svg" height="55" /></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="pieoverview.html">All pies</a></li>
-                <li><a href="about.html">About</a></li>
-                <li class="right"><input type="search" class="searchbox" placeholder="Search our store" /></li>
-            </ul>
-        </nav>
-    </header>
-    <div style="width:1000px;margin-left: auto;margin-right: auto;">
-        <aside id="leftmenu">
-            <img src="images/bethanylogo.png" />
-
-            <header>
-                <h4 style="text-align: center;">Browse our pies</h4>
-            </header>
-            <ul>
-                <li><a href="pieoverview.html">All pies</a></li>
-                <li><a href="cheesecakes.html">Cheese cakes</a></li>
-                <li><a href="fruitpies.html">Fruit pies</a></li>
-                <li><a href="seasonalpies.html">Seasonal pies</a></li>
-            </ul>
-
-        </aside>
-        <main id="main">
-            <table border="1"
-                style="width:100%;border: 1px solid black;border-collapse: collapse; padding: 20px;border-spacing: 5px;">
-                <caption>
-                    Our delicious selection of pies for you to enjoy!
-                </caption>
-                <thead>
-                    <tr>
-                        <th>Image</th>
-                        <th>Pie name</th>
-                        <th>Description</th>
-                        <th>Price</th>
-                        <th>Details</th>
-                    </tr>
-                </thead>
-                <tbody>
-
-                    <tr>
-                        <td><img src="images/products/pumpkinpiesmall.jpg" width="100"></td>
-                        <td>Pumpkin pie</td>
-                        <td>Our Halloween favorite</td>
-                        <td>$18.95</td>
-                        <td>View details</td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/products/christmasapplepiesmall.jpg" width="100"></td>
-                        <td>Christmas apple pie</td>
-                        <td>Happy holidays with this pie!</td>
-                        <td>$19.95</td>
-                        <td>View details</td>
-                    </tr>
-                </tbody>
-            </table>
-        </main>
-
-        <footer>
-            <p>Our address is <address>Bethany's Pie Shop - Bakery Street 555 Brussels Belgium</address>
-            </p>
-            <p><small>&copy; 2020 Bethany's Pie Shop - All rights reserved</small></p>
-        </footer>
-    </div>
-</body>
+    <body>
+        <header id="mainheader">
+            <nav>
+                <ul>
+                    <li><img src="images/cake.svg" height="55" /></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pieoverview.html">All pies</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="right"><input type="search" class="searchbox" placeholder="Search our store" /></li>
+                </ul>
+            </nav>
+        </header>
+        <div style="width:1000px;margin-left: auto;margin-right: auto;">
+            <aside id="leftmenu">
+                <img src="images/bethanylogo.png" />
+                <header>
+                    <h4 style="text-align: center;">Browse our pies</h4>
+                </header>
+                <ul>
+                    <li><a href="pieoverview.html">All pies</a></li>
+                    <li><a href="cheesecakes.html">Cheese cakes</a></li>
+                    <li><a href="fruitpies.html">Fruit pies</a></li>
+                    <li><a href="seasonalpies.html">Seasonal pies</a></li>
+                </ul>
+            </aside>
+            <main id="main">
+                <div class="cards">
+                    <div class="card">
+                        <div class="content">
+                            <img src="images/products/pumpkinpiesmall.jpg">
+                            <h1 class="title">Pumpkin Pie</h1>
+                            <div class="description">Our Halloween favorite</div>
+                        </div>
+                        <div class="footer">$18.95</div>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <img src="images/products/christmasapplepiesmall.jpg">
+                            <h1 class="title">Christmas Apple Pie</h1>
+                            <div class="description">Happy holidays with this pie!</div>
+                        </div>
+                        <div class="footer">$19.95</div>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <p>Our address is <address>Bethany's Pie Shop - Bakery Street 555 Brussels Belgium</address>
+                </p>
+                <p><small>&copy; 2020 Bethany's Pie Shop - All rights reserved</small></p>
+            </footer>
+        </div>
+    </body>
 
 </html>
