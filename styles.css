@@ -11,6 +11,19 @@ body {
     background-color: #a593c2;
 }
 
+button {
+    outline: none;
+    border: none;
+    background: #a593c2;
+    color: white;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+/************
+Nav-bar
+*************/
+
 nav {
     height: 60px;
     width: 1000px;
@@ -46,15 +59,17 @@ nav>ul>li a {
     font-weight: bold;
 }
 
-button {
-    outline: none;
+nav input.searchbox {
+    box-sizing: border-box;
+    -webkit-appearance:none;
     border: none;
-    background: #a593c2;
-    color: white;
-    font-size: 1rem;
-    padding: 10px;
+    padding: 14px 12px 12px 12px;
+    width: 200px;
 }
 
+/************
+Page Layout
+*************/
 #leftmenu {
     float: left;
     width: 30%;
@@ -67,18 +82,17 @@ button {
     margin-bottom: 20px;
 }
 
+/************
+Footer
+*************/
 footer {
     clear: both;
     width: 100%;
 }
 
-.searchbox {
-    box-sizing: border-box;
-    -webkit-appearance:none;
-    border: none;
-    padding: 14px 12px 12px 12px;
-    width: 200px;
-}
+/************
+Cards
+*************/
 
 div.cards {
     display: flex;
