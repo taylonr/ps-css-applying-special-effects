@@ -8,69 +8,9 @@
     <meta name="description" content="Store front for Bethany's Pie Shop">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="favicon.png">
-    <style>
-        body {
-            margin-top: 0px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: #e6e4d9;
-            background-image: url('images/pattern.png');
-        }
+    <link rel="stylesheet" type="text/css" href="./styles.css">
 
-        #mainheader {
-            background-color: #a593c2;
-        }
-
-        nav {
-            height: 60px;
-            width: 1000px;
-            margin: 0 auto 20px;
-        }
-
-        nav>ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
-
-        nav>ul>li {
-            float: left;
-        }
-
-        nav>ul>li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 16px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        #leftmenu {
-            float: left;
-            width: 30%;
-            margin-bottom: 20px;
-        }
-
-        #main {
-            float: right;
-            width: 70%;
-            margin-bottom: 20px;
-        }
-
-        footer {
-            clear: both;
-            width: 100%;
-        }
-
-        .searchbox {
-            padding: 5px;
-            margin: 10px 10px;
-            width: 200px;
-        }
-
+<style>
         th,
         td {
             padding: 5px;
@@ -86,6 +26,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="pieoverview.html">All pies</a></li>
                 <li><a href="about.html">About</a></li>
+                <li class="right"><input type="search" class="searchbox" placeholder="Search our store" /></li>
             </ul>
         </nav>
     </header>
@@ -102,7 +43,7 @@
                 <li><a href="fruitpies.html">Fruit pies</a></li>
                 <li><a href="seasonalpies.html">Seasonal pies</a></li>
             </ul>
-            <input type="search" class="searchbox" placeholder="Search our store" />
+
         </aside>
         <main id="main">
             <table border="1"
