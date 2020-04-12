@@ -21,6 +21,10 @@ button {
     border-radius: 5px;
 }
 
+img {
+    border-radius: 1%;
+}
+
 /************
 Nav-bar
 *************/
@@ -106,6 +110,7 @@ div.card {
     background: #E6E4D9;
     margin-bottom: 10px;
     width: 100%;
+    border-radius: 1%;
 }
 
 div.card a {
@@ -121,10 +126,12 @@ div.card h1 {
 
 div.card img {
     width: 100%;
+    border-radius: 1% 1% 1% 50%;
 }
 
 div.card .image {
     padding: 10px 10px 0px 10px;
+
 }
 
 div.card .content {
