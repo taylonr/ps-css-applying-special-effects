@@ -18,6 +18,7 @@ button {
     color: white;
     font-size: 1rem;
     padding: 10px;
+    border-radius: 5px;
 }
 
 /************
@@ -59,16 +60,13 @@ nav>ul>li a {
     font-weight: bold;
 }
 
-nav input.searchbox {
+nav input {
     box-sizing: border-box;
     -webkit-appearance:none;
     border: none;
-    background: #a593c2;
-    color: white;
-    font-size: 1rem;
-    padding: 10px;
-    border-radius: 20px;
     padding: 14px 12px 12px 12px;
+    width: 200px;
+    border-radius: 5px;
 }
 
 /************
@@ -108,7 +106,6 @@ div.card {
     background: #E6E4D9;
     margin-bottom: 10px;
     width: 100%;
-    border-radius: 1%;
 }
 
 div.card a {
@@ -124,7 +121,6 @@ div.card h1 {
 
 div.card img {
     width: 100%;
-    border-radius: 1%;
 }
 
 div.card .image {
