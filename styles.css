@@ -1,23 +1,23 @@
 body {
-    margin-top: 0px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #e6e4d9;
-    background-image: url('images/pattern.png');
+  margin-top: 0px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #e6e4d9;
+  background-image: url("images/pattern.png");
 }
 
 #mainheader {
-    background-color: #a593c2;
+  background-color: #a593c2;
 }
 
 button {
-    outline: none;
-    border: none;
-    background: #a593c2;
-    color: white;
-    font-size: 1rem;
-    padding: 10px;
+  outline: none;
+  border: none;
+  background: #a593c2;
+  color: white;
+  font-size: 1rem;
+  padding: 10px;
 }
 
 /************
@@ -25,69 +25,69 @@ Nav-bar
 *************/
 
 nav {
-    height: 60px;
-    width: 1000px;
-    margin: 0 auto 20px;
+  height: 60px;
+  width: 1000px;
+  margin: 0 auto 20px;
 }
 
 nav button {
-    background: #24CFA6;
+  background: #24cfa6;
 }
 
-nav>ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+nav > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
-nav>ul>li {
-    float: left;
+nav > ul > li {
+  float: left;
 }
 
-nav>ul>li.right {
-    float: right;
-    padding: 10px 0px;
+nav > ul > li.right {
+  float: right;
+  padding: 10px 0px;
 }
 
-nav>ul>li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-    font-weight: bold;
+nav > ul > li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 nav input.searchbox {
-    box-sizing: border-box;
-    -webkit-appearance:none;
-    border: none;
-    padding: 14px 12px 12px 12px;
-    width: 200px;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  border: none;
+  padding: 14px 12px 12px 12px;
+  width: 200px;
 }
 
 /************
 Page Layout
 *************/
 #leftmenu {
-    float: left;
-    width: 30%;
-    margin-bottom: 20px;
+  float: left;
+  width: 30%;
+  margin-bottom: 20px;
 }
 
 #main {
-    float: right;
-    width: 70%;
-    margin-bottom: 20px;
+  float: right;
+  width: 70%;
+  margin-bottom: 20px;
 }
 
 /************
 Footer
 *************/
 footer {
-    clear: both;
-    width: 100%;
+  clear: both;
+  width: 100%;
 }
 
 /************
@@ -95,53 +95,52 @@ Cards
 *************/
 
 div.cards {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 div.card {
-    border: 1px solid gray;
-    background: #E6E4D9;
-    margin-bottom: 10px;
-    width: 100%;
+  border: 1px solid gray;
+  background: #e6e4d9;
+  margin-bottom: 50px;
+  width: 100%;
 }
 
 div.card a {
-    text-decoration: none;
-    color: unset;
+  text-decoration: none;
+  color: unset;
 }
 
 div.card h1 {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    font-size: 1.25rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
 }
 
 div.card img {
-    width: 100%;
+  width: 100%;
 }
 
 div.card .image {
-    padding: 10px 10px 0px 10px;
+  padding: 10px 10px 0px 10px;
 }
 
 div.card .content {
-    padding: 10px 10px 0px 10px;
-    background: #F8F4F1;
-    margin-top: 4px;
-    border-top: 1px solid lightgray;
-    padding: 4px 10px 4px 10px;
+  padding: 10px 10px 0px 10px;
+  background: #f8f4f1;
+  margin-top: 4px;
+  border-top: 1px solid lightgray;
+  padding: 4px 10px 4px 10px;
 }
 
 div.card .description {
-    font-style: italic;
+  font-style: italic;
 }
 
 div.card .footer {
-    font-size: 14px;
-    font-weight: bold;
-    color: gray;
-    background: #F8F4F1;
-    padding: 4px 10px 4px 10px;
-
+  font-size: 14px;
+  font-weight: bold;
+  color: gray;
+  background: #f8f4f1;
+  padding: 4px 10px 4px 10px;
 }
