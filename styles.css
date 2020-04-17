@@ -9,7 +9,7 @@ body {
 
 #mainheader {
   background-color: #a593c2;
-  box-shadow: 0px 3px 5px;
+  box-shadow: 0px 3px 15px;
 }
 
 button {
@@ -112,7 +112,7 @@ div.card {
   margin-bottom: 50px;
   width: 100%;
   border-radius: 1%;
-  box-shadow: 0px 3px 15px;
+  box-shadow: 5px 5px 15px 25px;
 }
 
 div.card a {
