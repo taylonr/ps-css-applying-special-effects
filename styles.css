@@ -117,6 +117,7 @@ div.card {
 
 div.card.active {
   box-shadow: 5px 5px 15px 10px #7b5ea9;
+  transition-duration: 0.75s;
 }
 
 div.card a {
@@ -181,9 +182,27 @@ aside > ul > li a {
   text-decoration: none;
   color: inherit;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 
 aside > ul > li span {
   opacity: 0;
+  padding-right: 60%;
+}
+
+aside > ul > li:hover {
+  background: white;
+  color: #24cfa6;
+  transition: 0.5s;
+}
+
+aside > ul > li:hover span {
+  opacity: 1;
+  transition-property: opacity, padding-right;
+  transition-duration: 2s, 5s;
+  transition-delay: 0s, 2s;
+  transition: opacity 2s 0.5s, padding-right 5s 2s;
+  padding-right: 0%;
+  font-weight: bold;
+  color: #a593c2;
 }
