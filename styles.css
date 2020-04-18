@@ -156,35 +156,3 @@ div.card .footer {
   background: #f8f4f1;
   padding: 4px 10px 4px 10px;
 }
-
-/************
-Aside
-*************/
-aside > ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-aside > ul > li {
-  padding: 8px;
-  margin-bottom: 2px;
-  margin-right: 8px;
-  background: #24cfa6;
-  color: white;
-}
-
-aside > ul > li a {
-  text-decoration: none;
-  color: inherit;
-}
-
-aside > ul > li div {
-  display: flex;
-  justify-content: flex-start;
-}
-
-aside > ul > li span {
-  opacity: 0;
-}
