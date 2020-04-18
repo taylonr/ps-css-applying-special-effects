@@ -59,7 +59,7 @@ nav > ul > li a {
   font-weight: bold;
 }
 
-nav input.searchbox {
+nav input {
   box-sizing: border-box;
   -webkit-appearance: none;
   border: none;
