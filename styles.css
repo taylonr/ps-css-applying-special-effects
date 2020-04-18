@@ -106,6 +106,10 @@ div.card {
   width: 100%;
 }
 
+div.card.active {
+  box-shadow: 5px 5px 15px 10px #7b5ea9;
+}
+
 div.card a {
   text-decoration: none;
   color: unset;
