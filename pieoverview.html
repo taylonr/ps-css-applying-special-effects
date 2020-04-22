@@ -33,10 +33,30 @@
                     <h4 style="text-align: center;">Browse our pies</h4>
                 </header>
                 <ul>
-                    <li><a href="pieoverview.html">All pies</a></li>
-                    <li><a href="cheesecakes.html">Cheese cakes</a></li>
-                    <li><a href="fruitpies.html">Fruit pies</a></li>
-                    <li><a href="seasonalpies.html">Seasonal pies</a></li>
+                    <li>
+                        <a href="pieoverview.html">
+                            <div>All pies</div>
+                            <span>11</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cheesecakes.html">
+                            <div>Cheese cakes</div>
+                            <span>3</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="fruitpies.html">
+                            <div>Fruit pies</div>
+                            <span>6</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="seasonalpies.html">
+                            <div>Seasonal pies</div>
+                            <span>2</span>
+                        </a>
+                    </li>
                 </ul>
             </aside>
             <main id="main">
@@ -162,5 +182,18 @@
             </footer>
         </div>
     </body>
+    <script type="text/javascript">
+        function removeToggle(items) {
+            items.map(_ => _.classList.remove('active'));
+        }
+        window.onload = function () {
+            const cards = Array.from(document.querySelectorAll('.card'));
+
+            cards.map(_ => _.onclick = () => {
+                removeToggle(cards);
+                _.classList.add('active');
+            });
+        }
+    </script>
 
 </html>

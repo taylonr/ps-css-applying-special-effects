@@ -1,87 +1,104 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="utf-8">
-    <title>Welcome to Bethany's Pie Shop!</title>
-    <meta name="author" content="Bethany's Pie Shop">
-    <meta name="description" content="Store front for Bethany's Pie Shop">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" type="text/css" href="./styles.css">
-</head>
+    <head>
+        <meta charset="utf-8">
+        <title>Welcome to Bethany's Pie Shop!</title>
+        <meta name="author" content="Bethany's Pie Shop">
+        <meta name="description" content="Store front for Bethany's Pie Shop">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="favicon.png">
+        <link rel="stylesheet" type="text/css" href="./styles.css">
+    </head>
 
-<body>
-    <header id="mainheader">
-        <nav>
-            <ul>
-                <li><img src="images/cake.svg" height="55" /></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="pieoverview.html">All pies</a></li>
-                <li><a href="about.html">About</a></li>
-                <li class="right">
-                    <input type="search" class="searchbox" placeholder="Search our store" />
-                    <button type="submit">Search</button>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <div style="width:1000px;margin-left: auto;margin-right: auto;">
-        <aside id="leftmenu">
-            <img src="images/bethanylogo.png" />
-
-            <header>
-                <h4 style="text-align: center;">Browse our pies</h4>
-            </header>
-            <ul>
-                <li><a href="pieoverview.html">All pies</a></li>
-                <li><a href="cheesecakes.html">Cheese cakes</a></li>
-                <li><a href="fruitpies.html">Fruit pies</a></li>
-                <li><a href="seasonalpies.html">Seasonal pies</a></li>
-            </ul>
-
-        </aside>
-        <main id="main">
-            <div class="cards">
-                <div class="card">
-                    <div class="image">
-                        <img src="images/products/cheesecakesmall.jpg">
+    <body>
+        <header id="mainheader">
+            <nav>
+                <ul>
+                    <li><img src="images/cake.svg" height="55" /></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pieoverview.html">All pies</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="right">
+                        <input type="search" class="searchbox" placeholder="Search our store" />
+                        <button type="submit">Search</button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div style="width:1000px;margin-left: auto;margin-right: auto;">
+            <aside id="leftmenu">
+                <img src="images/bethanylogo.png" />
+                <header>
+                    <h4 style="text-align: center;">Browse our pies</h4>
+                </header>
+                <ul>
+                    <li>
+                        <a href="pieoverview.html">
+                            <div>All pies</div>
+                            <span>11</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cheesecakes.html">
+                            <div>Cheese cakes</div>
+                            <span>3</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="fruitpies.html">
+                            <div>Fruit pies</div>
+                            <span>6</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="seasonalpies.html">
+                            <div>Seasonal pies</div>
+                            <span>2</span>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+            <main id="main">
+                <div class="cards">
+                    <div class="card">
+                        <div class="image">
+                            <img src="images/products/cheesecakesmall.jpg">
+                        </div>
+                        <div class="content">
+                            <h1 class="title">Cheese cake</h1>
+                            <div class="description">Plain cheese cake. Plain pleasure.</div>
+                        </div>
+                        <div class="footer">$12.95</div>
                     </div>
-                    <div class="content">
-                        <h1 class="title">Cheese cake</h1>
-                        <div class="description">Plain cheese cake. Plain pleasure.</div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="images/products/blueberrycheesecakesmall.jpg">
+                        </div>
+                        <div class="content">
+                            <h1 class="title">Blueberry cheese cake</h1>
+                            <div class="description">You'll love it!</div>
+                        </div>
+                        <div class="footer">$17.95</div>
                     </div>
-                    <div class="footer">$12.95</div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="images/products/strawberrycheesecakesmall.jpg">
+                        </div>
+                        <div class="content">
+                            <h1 class="title">Strawberry cheese cake</h1>
+                            <div class="description">One of the best cheese cakes you'll ever find!</div>
+                        </div>
+                        <div class="footer">$18.95</div>
+                    </div>
                 </div>
-                <div class="card">
-                    <div class="image">
-                        <img src="images/products/blueberrycheesecakesmall.jpg">
-                    </div>
-                    <div class="content">
-                        <h1 class="title">Blueberry cheese cake</h1>
-                        <div class="description">You'll love it!</div>
-                    </div>
-                    <div class="footer">$17.95</div>
-                </div>
-                <div class="card">
-                    <div class="image">
-                        <img src="images/products/strawberrycheesecakesmall.jpg">
-                    </div>
-                    <div class="content">
-                        <h1 class="title">Strawberry cheese cake</h1>
-                        <div class="description">One of the best cheese cakes you'll ever find!</div>
-                    </div>
-                    <div class="footer">$18.95</div>
-                </div>
-            </div>
-        </main>
-
-        <footer>
-            <p>Our address is <address>Bethany's Pie Shop - Bakery Street 555 Brussels Belgium</address>
-            </p>
-            <p><small>&copy; 2020 Bethany's Pie Shop - All rights reserved</small></p>
-        </footer>
-    </div>
-</body>
+            </main>
+            <footer>
+                <p>Our address is <address>Bethany's Pie Shop - Bakery Street 555 Brussels Belgium</address>
+                </p>
+                <p><small>&copy; 2020 Bethany's Pie Shop - All rights reserved</small></p>
+            </footer>
+        </div>
+    </body>
 
 </html>

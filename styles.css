@@ -9,6 +9,7 @@ body {
 
 #mainheader {
   background-color: #a593c2;
+  box-shadow: 0px 3px 15px;
 }
 
 button {
@@ -108,9 +109,15 @@ div.cards {
 div.card {
   border: 1px solid gray;
   background: #e6e4d9;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
   width: 100%;
   border-radius: 1%;
+  box-shadow: 5px 5px 15px;
+}
+
+div.card.active {
+  box-shadow: 5px 5px 15px 10px #7b5ea9;
+  transition-duration: 0.75s;
 }
 
 div.card a {
@@ -151,4 +158,48 @@ div.card .footer {
   color: gray;
   background: #f8f4f1;
   padding: 4px 10px 4px 10px;
+}
+
+/************
+Aside
+*************/
+aside > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+aside > ul > li {
+  padding: 8px;
+  margin-bottom: 2px;
+  margin-right: 8px;
+  background: #24cfa6;
+  color: white;
+}
+
+aside > ul > li a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  justify-content: space-between;
+}
+
+aside > ul > li span {
+  opacity: 0;
+  padding-right: 60%;
+}
+
+aside > ul > li:hover {
+  background: white;
+  color: #24cfa6;
+  transition: 0.5s;
+}
+
+aside > ul > li:hover span {
+  opacity: 1;
+  transition: opacity 2s, padding-right 5s 2s;
+  padding-right: 0%;
+  font-weight: bold;
+  color: #a593c2;
 }
