@@ -93,17 +93,41 @@ footer {
 /************
 Cards
 *************/
-
 div.cards {
   display: flex;
   flex-wrap: wrap;
 }
 
 div.card {
+  background-color: transparent;
   border: 1px solid gray;
-  background: #e6e4d9;
   margin-bottom: 50px;
+  height: 535px;
+  width: 700px;
+}
+
+div.card-inner {
   width: 100%;
+  height: 100%;
+  text-align: center;
+  transform-style: preserve-3d;
+}
+
+div.card-front,
+div.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+div.card-front {
+  background: #e6e4d9;
+}
+div.card-back {
+  background-color: #24cfa6;
+  color: white;
 }
 
 div.card.active {
@@ -147,4 +171,20 @@ div.card .footer {
   color: gray;
   background: #f8f4f1;
   padding: 4px 10px 4px 10px;
+}
+
+div.card ul {
+  list-style-type: none;
+  text-align: left;
+}
+div.card ol {
+  text-align: left;
+}
+
+div.card ol > li {
+  padding-bottom: 8px;
+}
+
+div.card .ingredients {
+  display: flex;
 }
