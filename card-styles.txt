@@ -10,7 +10,6 @@ div.card-inner {
   width: 100%;
   height: 100%;
   text-align: center;
-  transition: transform 0.8s;
   transform-style: preserve-3d;
 }
 div.card-front,
@@ -18,12 +17,6 @@ div.card-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
-}
-
-.card:hover .card-inner {
-  transform: rotateY(180deg);
 }
 
 div.card-front {
@@ -32,7 +25,6 @@ div.card-front {
 div.card-back {
   background-color: #24cfa6;
   color: white;
-  transform: rotateY(180deg);
 }
 
 div.card.active {
