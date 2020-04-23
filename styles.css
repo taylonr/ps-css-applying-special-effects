@@ -64,7 +64,11 @@ nav > ul > li a {
   text-decoration: none;
   font-weight: bold;
 }
-
+nav > ul > li > a:hover {
+  color: #7b5ea9;
+  background: white;
+  font-size: 18px;
+}
 nav input {
   box-sizing: border-box;
   -webkit-appearance: none;
