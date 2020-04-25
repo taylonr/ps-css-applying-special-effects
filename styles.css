@@ -111,17 +111,45 @@ div.cards {
 }
 
 div.card {
+  background-color: transparent;
   border: 1px solid gray;
-  background: #e6e4d9;
   margin-bottom: 50px;
+  height: 535px;
+  width: 700px;
+  perspective: 1000px;
+}
+
+div.card-inner {
   width: 100%;
-  border-radius: 1%;
-  box-shadow: 5px 5px 15px;
+  height: 100%;
+  text-align: center;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+div.card-front,
+div.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+div.card-front {
+  background: #e6e4d9;
+}
+div.card-back {
+  background-color: #24cfa6;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
 }
 
 div.card.active {
   box-shadow: 5px 5px 15px 10px #7b5ea9;
-  transition-duration: 0.75s;
 }
 
 div.card a {
@@ -137,7 +165,6 @@ div.card h1 {
 
 div.card img {
   width: 100%;
-  border-radius: 1% 1% 1% 50%;
 }
 
 div.card .image {
@@ -162,6 +189,22 @@ div.card .footer {
   color: gray;
   background: #f8f4f1;
   padding: 4px 10px 4px 10px;
+}
+
+div.card ul {
+  list-style-type: none;
+  text-align: left;
+}
+div.card ol {
+  text-align: left;
+}
+
+div.card ol > li {
+  padding-bottom: 8px;
+}
+
+div.card .ingredients {
+  display: flex;
 }
 
 /************
