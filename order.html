@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Welcome to Bethany's Pie Shop!</title>
+        <meta name="author" content="Bethany's Pie Shop">
+        <meta name="description" content="Store front for Bethany's Pie Shop">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="favicon.png">
+        <link rel="stylesheet" type="text/css" href="./styles.css">
+        <style>
+            form {
+                background: #e6e4d9;
+            }
+
+            .flex {
+                display: flex;
+                flex-direction: column;
+                margin-left: 15px;
+            }
+
+            input {
+                box-sizing: border-box;
+                -webkit-appearance: none;
+                border: none;
+                padding: 14px 12px 12px 12px;
+                margin: 5px 25px 10px 0px;
+            }
+
+            button {
+                margin: 5px 25px 10px 0px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header id="mainheader">
+            <nav>
+                <ul>
+                    <li><img src="images/cake.svg" height="55" /></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pieoverview.html">All pies</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="right">
+                        <input type="search" class="searchbox" placeholder="Search our store" />
+                        <button type="submit">Search</button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div style="width:1000px;margin-left: auto;margin-right: auto;">
+            <aside id="leftmenu">
+                <img src="images/bethanylogo.png" />
+                <header>
+                    <h4 style="text-align: center;">Browse our pies</h4>
+                </header>
+                <ul>
+                    <li><a href="pieoverview.html">All pies</a></li>
+                    <li><a href="cheesecakes.html">Cheese cakes</a></li>
+                    <li><a href="fruitpies.html">Fruit pies</a></li>
+                    <li><a href="seasonalpies.html">Seasonal pies</a></li>
+                </ul>
+            </aside>
+            <main id="main">
+                <article>
+                    <header>
+                        <h1 style="font-size:35px;color:#a593c2">Order a pie</h1>
+                    </header>
+                    <form>
+                        <div class="flex">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" />
+                        </div>
+                        <div class="flex">
+                            <label for="address">Address</label>
+                            <input type="text" name="address" />
+                        </div>
+                        <div class="flex">
+                            <label for="city">City</label>
+                            <input type="text" name="city" />
+                        </div>
+                        <div class="flex">
+                            <label for="pieType">Type of Pie</label>
+                            <input type="text" name="pieType" />
+                        </div>
+                        <div class="flex">
+                            <button type="submit">Order</button>
+                        </div>
+                    </form>
+                </article>
+            </main>
+            <footer>
+                <p>Our address is <address>Bethany's Pie Shop - Bakery Street 555 Brussels Belgium</address>
+                </p>
+                <p><small>&copy; 2020 Bethany's Pie Shop - All rights reserved</small></p>
+            </footer>
+        </div>
+    </body>
+
+</html>
