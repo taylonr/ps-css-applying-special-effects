@@ -250,3 +250,22 @@ aside > ul > li:hover span {
   font-weight: bold;
   color: #a593c2;
 }
+.logo.load {
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: translate(150%, 50%) scale(0.75) rotate(0deg);
+  }
+
+  50% {
+    transform: translate(150%, 50%) scale(1.1) rotate(360deg);
+  }
+
+  100% {
+    transform: translate(150%, 50%) scale(0.75) rotate(0deg);
+  }
+}
