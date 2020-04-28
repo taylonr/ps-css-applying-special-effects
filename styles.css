@@ -26,6 +26,50 @@ img {
   border-radius: 1%;
 }
 
+.logo {
+  transition: transform 1s;
+}
+
+.logo.load {
+  transform: translate(500px, 100px);
+
+  animation-name: spin, fade;
+  animation-duration: 3s, 2s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear, ease;
+}
+
+@keyframes spin {
+  from {
+    transform: translate(500px, 100px) rotate(0deg);
+  }
+
+  to {
+    transform: translate(500px, 100px) rotate(360deg);
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.5;
+  }
+
+  35% {
+    opacity: 0.75;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
 /************
 Nav-bar
 *************/
@@ -249,30 +293,4 @@ aside > ul > li:hover span {
   padding-right: 0%;
   font-weight: bold;
   color: #a593c2;
-}
-.logo {
-  transition: transform 1s;
-}
-
-.logo.load {
-  animation-name: pulse;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-delay: 1s;
-
-  transform: translate(500px, 100px);
-}
-
-@keyframes pulse {
-  0% {
-    transform: translate(500px, 100px) scale(0.75) rotate(0deg);
-  }
-
-  50% {
-    transform: translate(500px, 100px) scale(1.1) rotate(360deg);
-  }
-
-  100% {
-    transform: translate(500px, 100px) scale(0.75) rotate(0deg);
-  }
 }
