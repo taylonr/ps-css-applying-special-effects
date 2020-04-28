@@ -121,7 +121,6 @@ div.card {
 
 div.card.active {
   box-shadow: 5px 5px 15px 10px #7b5ea9;
-  transition-duration: 0.75s;
 }
 
 div.card a {
